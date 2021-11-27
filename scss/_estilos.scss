@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    //font-size: 16px;
+}
+.container_base{
+    width: 100%;
+    height: 100vh;
+    background:$background-jh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container_tarjeta{
+        width:350px;
+        height: 550px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        //box-shadow: 0px 0px 5px black;
+        .image_fondo{
+            width: 100%;
+            height: 200px;
+            background-image: url(../images/illustration-hero.svg);
+            background-size: 100% 100%;
+        }
+        .title{
+            margin-top: 30px;
+            text-align: center;
+            color: $background_f;
+            
+        }
+        .parrafo{
+            width: 80%;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: $background_v;
+        }
+        .cont_order{
+            width: 80%;
+            background: $background_o;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .cont_anual_plan{
+                width: auto;
+                padding: 3px 0px;
+                //background: rgb(14, 14, 78);
+                display: flex;
+
+                .figure{
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../images/icon-music.svg);
+                    background-size: 100% 100%;
+                }
+                .figure_text{
+                    //background: yellow;
+                    margin-left: 12px;
+                    .figure_text_title{
+                        font-size:16px ;
+                        color: $background_f;
+                    }
+                    .figure_text_p{
+                         color:$background_v;                   
+                    }
+                }
+            }
+        }
+        .boton{
+            margin-top: 20px;
+            width: 80%;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            margin-left: calc(10%);
+            background: $background_a;
+            color:$background-jh;
+            cursor: pointer;
+        }
+        .cancel{
+            margin-top: 10px;
+            text-align: center;
+            .link2{
+                text-decoration: none;
+                color:$background_v;
+            }
+        }
+    }
+}
